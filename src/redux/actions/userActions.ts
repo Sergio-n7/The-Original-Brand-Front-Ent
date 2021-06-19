@@ -24,7 +24,7 @@ export const siginSucces = (user: Partial<User>): AllUsersActions => {
 export const siginError = (error: Error | null): AllUsersActions => {
   return {
     type: USER_SIGNIN_ERROR,
-    paylad: error,
+    payload: error,
   };
 };
 
