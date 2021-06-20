@@ -31,4 +31,51 @@ export type InitialState = {
   errorDeleteCart: Error | null;
 };
 
-const cartReducer = 
+const cartReducer = (state = initialState, action: AllCartActions) => {
+  switch (action.type) {
+    case TOGGLE_CART:
+      return {
+        ...state,
+        isOpen: action.payload,
+      };
+    case CART_QTY:
+      return {
+        ...state,
+        qty: action.payload,
+      };
+    case CREATE_CART_ERROR:
+      return {
+        ...state,
+        errorCreateCart: action.payload,
+      };
+    case GET_CART_ERROR:
+      return {
+        ...state,
+        errorGetCart: action.payload,
+      };
+    case GET_CART_SUCCESS:
+      return {
+        ...state,
+        userCart: action.payload,
+      };
+    case DELETE_GARMET_CART_ERROR:
+      return {
+        ...state,
+        errorDeleteGarmetCart: action.payload,
+      };
+    case DELETE_CART:
+      return {
+        ...state,
+        userCart: "",
+      };
+    case DELETE_CART_ERROR:
+      return {
+        ...state,
+        errorDeleteCart: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+
+export default cartReducer;
