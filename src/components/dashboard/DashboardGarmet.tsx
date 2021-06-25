@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-
 import { Button, Grid, Container, Typography, Input } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import { TextField } from "formik-material-ui";
@@ -16,7 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexDirection: "column",
       alignItems: "center",
     },
-    name: {
+    title: {
       margin: theme.spacing(1),
       color: theme.palette.primary.light,
     },
@@ -70,14 +69,14 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
-    .max(100, "Title is too long")
+    .max(100, "Title is too long.")
     .required("This field is required."),
   description: Yup.string().required("This field is required."),
   category: Yup.string()
-    .max(50, "Category is too long")
+    .max(50, "Category is too long.")
     .required("This field is required."),
   stock: Yup.string()
-    .min(0, "Stock can not have a negative value.")
+    .min(0, "Stock cannot be negative.")
     .required("This field is required."),
   price: Yup.string()
     .min(0, "Price cannot be negative.")
@@ -89,7 +88,7 @@ const validationSchema = Yup.object().shape({
 
 type State = {
   garmet: {
-    errorCreateGArmet: Error | null;
+    errorCreateGarmet: Error | null;
   };
 };
 
@@ -119,11 +118,12 @@ const DashboardGarmet = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
 
-  const { errorCreateGArmet } = useSelector((state: State) => state.garmet);
+  const { errorCreateGarmet } = useSelector((state: State) => state.garmet);
+
   return (
     <Container component="main" maxWidth="xs">
       <div className={classes.paper}>
-        <Typography className={classes.name} variant="h4" noWrap>
+        <Typography className={classes.title} variant="h4" noWrap>
           Add a new garmet
         </Typography>
         <Formik
@@ -132,9 +132,10 @@ const DashboardGarmet = () => {
           onSubmit={(values, { resetForm }) => {
             const form = new FormData();
             form.append("image", values.image);
-            form.append("name", values.name);
+            form.append("title", values.name);
+            form.append("description", values.description);
             form.append("category", values.category);
-            form.append("stock", values.stock.toString());
+            form.append("countInStock", values.stock.toString());
             form.append("price", values.price.toString());
             form.append("color", values.color);
             form.append("size", values.size);
@@ -147,8 +148,8 @@ const DashboardGarmet = () => {
               <Grid item xs={12}>
                 <Field
                   component={TextField}
-                  name="title"
-                  label="Title"
+                  name="name"
+                  label="Name"
                   type="text"
                   fullWidth
                   className={classes.field}
@@ -167,7 +168,7 @@ const DashboardGarmet = () => {
               <Grid item xs={12}>
                 <Field
                   component={TextField}
-                  name="countInStock"
+                  name="stock"
                   label="Number in stock"
                   fullWidth
                   className={classes.field}
@@ -206,7 +207,7 @@ const DashboardGarmet = () => {
                 <p className={classes.categoryLabel}>Category</p>
                 <Field
                   label="Category"
-                  name="Category"
+                  name="category"
                   component="select"
                   className={classes.select}
                 >
@@ -243,8 +244,8 @@ const DashboardGarmet = () => {
                   }}
                 />
               </Grid>
-              {errorCreateGArmet ? (
-                <div className={classes.error}>{errorCreateGArmet.message}</div>
+              {errorCreateGarmet ? (
+                <div className={classes.error}>{errorCreateGarmet.message}</div>
               ) : (
                 ""
               )}

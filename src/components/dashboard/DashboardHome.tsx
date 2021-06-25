@@ -5,24 +5,24 @@ const DashboardHome = () => {
   return (
     <div className="dashboard">
       <div className="row row--center">
-        <div className="dashboard__cart">
-          <h2 className="dashboard__cart__title">User Dashboard</h2>
-          <i className="fas fa-user dashboard__cart__icons"></i>
-          <p className="dashboard__cart__subtitle">Edit user information</p>
-          <Link to="/dasboard/user">
-            <button className="dashboar__cart__btn">
+        <div className="dashboard__card">
+          <h2 className="dashboard__card__title">User Dashboard</h2>
+          <i className="fas fa-user dashboard__card__icons"></i>
+          <p className="dashboard__card__subtitle">Edit user information</p>
+          <Link to="/dashboard/user">
+            <button className="dashboard__card__btn">
               Go to user dashboard
             </button>
           </Link>
         </div>
 
-        <div className="dashboard__cart">
-          <h2 className="dashboard__cart__title">Garmet dashboard</h2>
-          <i className="fas fa-plus-square dashboard__cart__icons"></i>
-          <p className="dashboard__cart_subtitle">Add a new garmet</p>
+        <div className="dashboard__card">
+          <h2 className="dashboard__card__title">Garmets Dashboard</h2>
+          <i className="fas fa-plus-square dashboard__card__icons"></i>
+          <p className="dashboard__card__subtitle">Add a new garmet</p>
           <Link to="/dashboard/garmet">
-            <button className="dashboard__cart__btn">
-              Go to garmet dashboard
+            <button className="dashboard__card__btn">
+              Go to garmets dashboard
             </button>
           </Link>
         </div>
