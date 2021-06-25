@@ -86,7 +86,6 @@ export const editUsers =
     firstName: string,
     lastName: string,
     email: string,
-    age: number,
     password: string,
     isAdmin: boolean
   ) =>
@@ -98,7 +97,6 @@ export const editUsers =
           firstName,
           lastName,
           email,
-          age,
           password,
           isAdmin,
         }
@@ -124,13 +122,7 @@ export const signin =
   };
 
 export const register =
-  (
-    firstName: string,
-    lastName: string,
-    email: string,
-    age: number,
-    password: string
-  ) =>
+  (firstName: string, lastName: string, email: string, password: string) =>
   async (dispatch: Dispatch) => {
     try {
       const { data } = await axios.post(
@@ -139,7 +131,6 @@ export const register =
           firstName,
           lastName,
           email,
-          age,
           password,
         }
       );
