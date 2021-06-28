@@ -135,7 +135,7 @@ const DashboardGarmet = () => {
             form.append("title", values.name);
             form.append("description", values.description);
             form.append("category", values.category);
-            form.append("countInStock", values.stock.toString());
+            form.append("stock", values.stock.toString());
             form.append("price", values.price.toString());
             form.append("color", values.color);
             form.append("size", values.size);

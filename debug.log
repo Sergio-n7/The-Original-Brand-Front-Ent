@@ -1,0 +1,240 @@
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env.example file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env.example file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env.example file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"errors":{"category":{"name":"ValidatorError","message":"Path `category` is required.","properties":{"message":"Path `category` is required.","type":"required","path":"category"},"kind":"required","path":"category"},"genres":{"name":"ValidatorError","message":"Path `genres` is required.","properties":{"message":"Path `genres` is required.","type":"required","path":"genres"},"kind":"required","path":"genres"},"brand":{"name":"ValidatorError","message":"Path `brand` is required.","properties":{"message":"Path `brand` is required.","type":"required","path":"brand"},"kind":"required","path":"brand"},"ref":{"name":"ValidatorError","message":"Path `ref` is required.","properties":{"message":"Path `ref` is required.","type":"required","path":"ref"},"kind":"required","path":"ref"}},"_message":"Garmets validation failed","level":"error","name":"ValidationError","message":"Garmets validation failed: category: Path `category` is required., genres: Path `genres` is required., brand: Path `brand` is required., ref: Path `ref` is required."}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"errors":{"lastName":{"name":"ValidatorError","message":"Path `lastName` is required.","properties":{"message":"Path `lastName` is required.","type":"required","path":"lastName"},"kind":"required","path":"lastName"},"firstName":{"name":"ValidatorError","message":"Path `firstName` is required.","properties":{"message":"Path `firstName` is required.","type":"required","path":"firstName"},"kind":"required","path":"firstName"}},"_message":"userModel validation failed","level":"error","name":"ValidationError","message":"userModel validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required."}
+{"errors":{"lastName":{"name":"ValidatorError","message":"Path `lastName` is required.","properties":{"message":"Path `lastName` is required.","type":"required","path":"lastName"},"kind":"required","path":"lastName"},"firstName":{"name":"ValidatorError","message":"Path `firstName` is required.","properties":{"message":"Path `firstName` is required.","type":"required","path":"firstName"},"kind":"required","path":"firstName"}},"_message":"userModel validation failed","level":"error","name":"ValidationError","message":"userModel validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required."}
+{"errors":{"lastName":{"name":"ValidatorError","message":"Path `lastName` is required.","properties":{"message":"Path `lastName` is required.","type":"required","path":"lastName"},"kind":"required","path":"lastName"},"firstName":{"name":"ValidatorError","message":"Path `firstName` is required.","properties":{"message":"Path `firstName` is required.","type":"required","path":"firstName"},"kind":"required","path":"firstName"}},"_message":"userModel validation failed","level":"error","name":"ValidationError","message":"userModel validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required."}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"errors":{"lastName":{"name":"ValidatorError","message":"Path `lastName` is required.","properties":{"message":"Path `lastName` is required.","type":"required","path":"lastName"},"kind":"required","path":"lastName"},"firstName":{"name":"ValidatorError","message":"Path `firstName` is required.","properties":{"message":"Path `firstName` is required.","type":"required","path":"firstName"},"kind":"required","path":"firstName"}},"_message":"userModel validation failed","level":"error","name":"ValidationError","message":"userModel validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required."}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"errors":{"lastName":{"name":"ValidatorError","message":"Path `lastName` is required.","properties":{"message":"Path `lastName` is required.","type":"required","path":"lastName"},"kind":"required","path":"lastName"},"firstName":{"name":"ValidatorError","message":"Path `firstName` is required.","properties":{"message":"Path `firstName` is required.","type":"required","path":"firstName"},"kind":"required","path":"firstName"}},"_message":"userModel validation failed","level":"error","name":"ValidationError","message":"userModel validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required."}
+{"errors":{"lastName":{"name":"ValidatorError","message":"Path `lastName` is required.","properties":{"message":"Path `lastName` is required.","type":"required","path":"lastName"},"kind":"required","path":"lastName"},"firstName":{"name":"ValidatorError","message":"Path `firstName` is required.","properties":{"message":"Path `firstName` is required.","type":"required","path":"firstName"},"kind":"required","path":"firstName"}},"_message":"userModel validation failed","level":"error","name":"ValidationError","message":"userModel validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required."}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"errors":{"lastName":{"name":"ValidatorError","message":"Path `lastName` is required.","properties":{"message":"Path `lastName` is required.","type":"required","path":"lastName"},"kind":"required","path":"lastName"},"firstName":{"name":"ValidatorError","message":"Path `firstName` is required.","properties":{"message":"Path `firstName` is required.","type":"required","path":"firstName"},"kind":"required","path":"firstName"}},"_message":"userModel validation failed","level":"error","name":"ValidationError","message":"userModel validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required."}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"errors":{"lastName":{"name":"ValidatorError","message":"Path `lastName` is required.","properties":{"message":"Path `lastName` is required.","type":"required","path":"lastName"},"kind":"required","path":"lastName"},"firstName":{"name":"ValidatorError","message":"Path `firstName` is required.","properties":{"message":"Path `firstName` is required.","type":"required","path":"firstName"},"kind":"required","path":"firstName"}},"_message":"userModel validation failed","level":"error","name":"ValidationError","message":"userModel validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required."}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"email":1},"keyValue":{"email":"hola@hola.com"},"level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"stringValue":"\"undefined\"","kind":"ObjectId","value":"undefined","path":"_id","reason":{},"level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"stringValue":"\"undefined\"","kind":"ObjectId","value":"undefined","path":"_id","reason":{},"level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"stringValue":"\"undefined\"","kind":"ObjectId","value":"undefined","path":"_id","reason":{},"level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"name":"JsonWebTokenError","message":"jwt malformed","level":"error"}
+{"level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"stringValue":"\"undefined\"","kind":"ObjectId","value":"undefined","path":"_id","reason":{},"level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"email":1},"keyValue":{"email":"adions@hola.com"},"level":"error"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
+{"message":"Logging initialized at debug level","level":"debug"}
+{"message":"Using .env file to supply config environment variables","level":"debug"}
