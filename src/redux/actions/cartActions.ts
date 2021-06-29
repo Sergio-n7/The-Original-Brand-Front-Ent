@@ -74,7 +74,10 @@ export const createCart =
       const temp = JSON.parse(localStorage.getItem("userInfo") as string);
       const userId = temp.id;
 
-      axios.post(`<urlFromHeroku>/cart/${userId}`, { garmetId, qty });
+      axios.post(
+        `https://the-original-brand.herokuapp.com/api/v1/cart/${userId}`,
+        { garmetId, qty }
+      );
     } catch (error) {
       dispatch(createCartError(error));
     }
@@ -85,7 +88,9 @@ export const getCart = () => async (dispatch: Dispatch) => {
     const temp = JSON.parse(localStorage.getItem("userInfo") as string);
     const userId = temp.id;
 
-    const { data } = await axios.get(`<urlFromHeroku>/cart/${userId}`);
+    const { data } = await axios.get(
+      `https://the-original-brand.herokuapp.com/api/v1/cart/${userId}`
+    );
     dispatch(getCartSuccess(data));
   } catch (error) {
     dispatch(getCartError(error));
@@ -98,7 +103,9 @@ export const deleteGarmetCart =
       const temp = JSON.parse(localStorage.getItem("userInfo") as string);
       const userId = temp.id;
 
-      axios.put(`<urlFromHeroku>/cart/${userId}/${garmetId}`);
+      axios.put(
+        `https://the-original-brand.herokuapp.com/api/v1/${userId}/${garmetId}`
+      );
     } catch (error) {
       dispatch(deleteGarmetCartError(error));
     }
@@ -109,7 +116,9 @@ export const cleanCart = () => (dispatch: Dispatch) => {
     const temp = JSON.parse(localStorage.getItem("userInfo") as string);
     const userId = temp.id;
 
-    axios.delete(`<urlFromHeroku>/cart/${userId}`);
+    axios.delete(
+      `https://the-original-brand.herokuapp.com/api/v1/cart/${userId}`
+    );
     dispatch(deleteCart());
   } catch (error) {
     dispatch(deleteCartError(error));

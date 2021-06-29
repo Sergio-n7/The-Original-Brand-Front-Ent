@@ -72,7 +72,7 @@ export const getAllUsers = (user: User[]): AllUsersActions => {
 export const fetchAllUsers = () => async (dispatch: Dispatch) => {
   try {
     const { data } = await axios.get(
-      "<url from heroku back-end deployment>/users"
+      "https://the-original-brand.herokuapp.com/api/v1/users"
     );
     dispatch(getAllUsers(data));
   } catch (error) {
@@ -92,7 +92,7 @@ export const editUsers =
   async (dispatch: Dispatch) => {
     try {
       const { data } = await axios.put(
-        `<url from heroku back-end deployment>/${userId}`,
+        `https://the-original-brand.herokuapp.com/api/v1/users/${userId}`,
         {
           firstName,
           lastName,
@@ -111,7 +111,7 @@ export const signin =
   (email: string, password: string) => async (dispatch: Dispatch) => {
     try {
       const { data } = await axios.post(
-        "<url from heroku back-end deployment>/users",
+        "https://the-original-brand.herokuapp.com/api/v1/users/signin",
         { email, password }
       );
       dispatch(siginSucces(data));
@@ -126,7 +126,7 @@ export const register =
   async (dispatch: Dispatch) => {
     try {
       const { data } = await axios.post(
-        "<url from heroku back-end deployment>/users",
+        "https://the-original-brand.herokuapp.com/api/v1/users",
         {
           firstName,
           lastName,
