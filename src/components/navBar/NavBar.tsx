@@ -165,7 +165,7 @@ const NavBar = () => {
         <Toolbar className={classes.navbar}>
           <Link to="/" className={classes.link}>
             <Typography className={classes.title} variant="h4" noWrap>
-              The Original Brand
+              TOB
             </Typography>
           </Link>
           {location.pathname === "/" ? (
