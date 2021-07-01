@@ -132,7 +132,7 @@ const DashboardGarmet = () => {
           onSubmit={(values, { resetForm }) => {
             const form = new FormData();
             form.append("image", values.image);
-            form.append("title", values.name);
+            form.append("name", values.name);
             form.append("description", values.description);
             form.append("category", values.category);
             form.append("stock", values.stock.toString());
