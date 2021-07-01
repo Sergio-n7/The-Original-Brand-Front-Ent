@@ -71,9 +71,7 @@ export const getAllUsers = (user: User[]): AllUsersActions => {
 
 export const fetchAllUsers = () => async (dispatch: Dispatch) => {
   try {
-    const { data } = await axios.get(
-      "https://the-original-brand.herokuapp.com/api/v1/users"
-    );
+    const { data } = await axios.get("/users");
     dispatch(getAllUsers(data));
   } catch (error) {
     throw new Error(error.message);
@@ -91,16 +89,13 @@ export const editUsers =
   ) =>
   async (dispatch: Dispatch) => {
     try {
-      const { data } = await axios.put(
-        `https://the-original-brand.herokuapp.com/api/v1/users/${userId}`,
-        {
-          firstName,
-          lastName,
-          email,
-          password,
-          isAdmin,
-        }
-      );
+      const { data } = await axios.put(`/users/${userId}`, {
+        firstName,
+        lastName,
+        email,
+        password,
+        isAdmin,
+      });
       dispatch(userEditSucces(data));
     } catch (error) {
       dispatch(userEditError(error));
@@ -110,10 +105,7 @@ export const editUsers =
 export const signin =
   (email: string, password: string) => async (dispatch: Dispatch) => {
     try {
-      const { data } = await axios.post(
-        "https://the-original-brand.herokuapp.com/api/v1/users/signin",
-        { email, password }
-      );
+      const { data } = await axios.post("/users/signin", { email, password });
       dispatch(siginSucces(data));
       localStorage.setItem("userInfo", JSON.stringify(data));
     } catch (error) {
@@ -125,15 +117,12 @@ export const register =
   (firstName: string, lastName: string, email: string, password: string) =>
   async (dispatch: Dispatch) => {
     try {
-      const { data } = await axios.post(
-        "https://the-original-brand.herokuapp.com/api/v1/users",
-        {
-          firstName,
-          lastName,
-          email,
-          password,
-        }
-      );
+      const { data } = await axios.post("/api/v1/users", {
+        firstName,
+        lastName,
+        email,
+        password,
+      });
       dispatch(UserRegisterSuccess(data));
       dispatch(siginSucces(data));
       localStorage.setItem("userInfo", JSON.stringify(data));
