@@ -34,7 +34,7 @@ export const UserSignOut = () => {
   };
 };
 
-export const UserRegisterSucces = (user: User): AllUsersActions => {
+export const UserRegisterSuccess = (user: User): AllUsersActions => {
   return {
     type: USER_REGISTER_SUCCESS,
     payload: user,
@@ -134,7 +134,7 @@ export const register =
           password,
         }
       );
-      dispatch(UserRegisterSucces(data));
+      dispatch(UserRegisterSuccess(data));
       dispatch(siginSucces(data));
       localStorage.setItem("userInfo", JSON.stringify(data));
     } catch (error) {

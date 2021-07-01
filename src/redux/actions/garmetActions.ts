@@ -15,7 +15,7 @@ import {
   Garmet,
 } from "../types/types";
 
-export const fetchGarmetsSucces = (garmets: Garmet[]): AllGarmetsActions => {
+export const fetchGarmetsSuccess = (garmets: Garmet[]): AllGarmetsActions => {
   return {
     type: FETCH_GARMETS_SUCCESS,
     payload: garmets,
@@ -87,7 +87,7 @@ export const fechtGarmets = () => async (dispatch: Dispatch) => {
     const { data } = await axios.get(
       "https://the-original-brand.herokuapp.com/api/v1/garmets"
     );
-    dispatch(fetchGarmetsSucces(data));
+    dispatch(fetchGarmetsSuccess(data));
     dispatch(filterGarmet(data));
   } catch (error) {
     dispatch(fetchGarmetsError(error));
