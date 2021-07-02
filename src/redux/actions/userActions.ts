@@ -14,14 +14,14 @@ import {
   AllUsersActions,
 } from "../types/types";
 
-export const siginSucces = (user: Partial<User>): AllUsersActions => {
+export const signinSuccess = (user: Partial<User>): AllUsersActions => {
   return {
     type: USER_SIGNIN_SUCCESS,
     payload: user,
   };
 };
 
-export const siginError = (error: Error | null): AllUsersActions => {
+export const signinError = (error: Error | null): AllUsersActions => {
   return {
     type: USER_SIGNIN_ERROR,
     payload: error,
@@ -48,7 +48,7 @@ export const UserRegisterError = (error: Error | null): AllUsersActions => {
   };
 };
 
-export const userEditSucces = (user: User): AllUsersActions => {
+export const userEditSuccess = (user: User): AllUsersActions => {
   return {
     type: USER_EDIT_SUCCESS,
     payload: user,
@@ -96,7 +96,7 @@ export const editUsers =
         password,
         isAdmin,
       });
-      dispatch(userEditSucces(data));
+      dispatch(userEditSuccess(data));
     } catch (error) {
       dispatch(userEditError(error));
     }
@@ -106,10 +106,10 @@ export const signin =
   (email: string, password: string) => async (dispatch: Dispatch) => {
     try {
       const { data } = await axios.post("/users/signin", { email, password });
-      dispatch(siginSucces(data));
+      dispatch(signinSuccess(data));
       localStorage.setItem("userInfo", JSON.stringify(data));
     } catch (error) {
-      dispatch(siginError(error));
+      dispatch(signinError(error));
     }
   };
 
@@ -117,14 +117,14 @@ export const register =
   (firstName: string, lastName: string, email: string, password: string) =>
   async (dispatch: Dispatch) => {
     try {
-      const { data } = await axios.post("/api/v1/users", {
+      const { data } = await axios.post("/users", {
         firstName,
         lastName,
         email,
         password,
       });
       dispatch(UserRegisterSuccess(data));
-      dispatch(siginSucces(data));
+      dispatch(signinSuccess(data));
       localStorage.setItem("userInfo", JSON.stringify(data));
     } catch (error) {
       dispatch(UserRegisterError(error));
