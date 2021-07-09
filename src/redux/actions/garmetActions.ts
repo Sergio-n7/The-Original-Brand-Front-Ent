@@ -15,7 +15,7 @@ import {
   Garmet,
 } from "../types/types";
 
-export const fetchGarmetsSucces = (garmets: Garmet[]): AllGarmetsActions => {
+export const fetchGarmetsSuccess = (garmets: Garmet[]): AllGarmetsActions => {
   return {
     type: FETCH_GARMETS_SUCCESS,
     payload: garmets,
@@ -84,8 +84,8 @@ export const deleteGarmetError = (error: Error | null): AllGarmetsActions => {
 
 export const fechtGarmets = () => async (dispatch: Dispatch) => {
   try {
-    const { data } = await axios.get("<urlFromHeroku>/garmets");
-    dispatch(fetchGarmetsSucces(data));
+    const { data } = await axios.get("/garmets");
+    dispatch(fetchGarmetsSuccess(data));
     dispatch(filterGarmet(data));
   } catch (error) {
     dispatch(fetchGarmetsError(error));
@@ -95,7 +95,7 @@ export const fechtGarmets = () => async (dispatch: Dispatch) => {
 export const fetchGarmetsDetails =
   (garmetId: string) => async (dispatch: Dispatch) => {
     try {
-      const { data } = await axios.get(`<urlFromHeroku>/garmets/${garmetId}`);
+      const { data } = await axios.get(`/garmets/${garmetId}`);
       dispatch(fetchGarmetDetailsSuccess(data));
     } catch (error) {
       dispatch(fetchGarmetDetailsError(error));
@@ -106,7 +106,7 @@ export const createGarmet = (form: FormData) => (dispatch: Dispatch) => {
   try {
     const temp = JSON.parse(localStorage.getItem("userInfo") as string);
     const token = temp.token;
-    axios.post("<urlFromHeroku>/garmets", form, {
+    axios.post("/garmets", form, {
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "multipart/form-data",
@@ -134,7 +134,7 @@ export const editGarmet =
       const token = temp.token;
 
       axios.put(
-        `<urlFromHeroku>/garmets/${garmetId}`,
+        `/garmets/${garmetId}`,
         { name, description, category, stock, price, color, size },
         {
           headers: {
@@ -152,7 +152,7 @@ export const deleteGarmet = (garmetId: string) => (dispatch: Dispatch) => {
     const temp = JSON.parse(localStorage.getItem("userInfo") as string);
     const token = temp.token;
 
-    axios.delete(`<urlFromHeroku>/garmets/${garmetId}`, {
+    axios.delete(`/garmets/${garmetId}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -172,7 +172,7 @@ export const postReview =
   (garmetId: string, review: ReviewInput) => async (dispatch: Dispatch) => {
     const { name, comment, rating } = review;
     try {
-      axios.put(`<urlFromHeroku>/garmets/review/${garmetId}`, {
+      axios.put(`/garmets/review/${garmetId}`, {
         name: name,
         comment: comment,
         rating: +rating,

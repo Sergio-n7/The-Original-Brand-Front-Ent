@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) =>
     navbar: {
       padding: "0 0.25rem",
       [theme.breakpoints.up("sm")]: {
-        padding: theme.spacing(0, 2),
+        padding: theme.spacing(1, 6),
       },
     },
     menuButton: {
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme: Theme) =>
       width: "100%",
       [theme.breakpoints.up("sm")]: {
         marginLeft: theme.spacing(3),
-        width: "auto",
+        width: "20%",
       },
     },
     searchIcon: {
@@ -165,7 +165,7 @@ const NavBar = () => {
         <Toolbar className={classes.navbar}>
           <Link to="/" className={classes.link}>
             <Typography className={classes.title} variant="h4" noWrap>
-              The Original Brand
+              TOB
             </Typography>
           </Link>
           {location.pathname === "/" ? (

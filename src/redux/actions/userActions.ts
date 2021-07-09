@@ -14,14 +14,14 @@ import {
   AllUsersActions,
 } from "../types/types";
 
-export const siginSucces = (user: Partial<User>): AllUsersActions => {
+export const signinSuccess = (user: Partial<User>): AllUsersActions => {
   return {
     type: USER_SIGNIN_SUCCESS,
     payload: user,
   };
 };
 
-export const siginError = (error: Error | null): AllUsersActions => {
+export const signinError = (error: Error | null): AllUsersActions => {
   return {
     type: USER_SIGNIN_ERROR,
     payload: error,
@@ -34,7 +34,7 @@ export const UserSignOut = () => {
   };
 };
 
-export const UserRegisterSucces = (user: User): AllUsersActions => {
+export const UserRegisterSuccess = (user: User): AllUsersActions => {
   return {
     type: USER_REGISTER_SUCCESS,
     payload: user,
@@ -48,7 +48,7 @@ export const UserRegisterError = (error: Error | null): AllUsersActions => {
   };
 };
 
-export const userEditSucces = (user: User): AllUsersActions => {
+export const userEditSuccess = (user: User): AllUsersActions => {
   return {
     type: USER_EDIT_SUCCESS,
     payload: user,
@@ -71,9 +71,7 @@ export const getAllUsers = (user: User[]): AllUsersActions => {
 
 export const fetchAllUsers = () => async (dispatch: Dispatch) => {
   try {
-    const { data } = await axios.get(
-      "<url from heroku back-end deployment>/users"
-    );
+    const { data } = await axios.get("/users");
     dispatch(getAllUsers(data));
   } catch (error) {
     throw new Error(error.message);
@@ -91,17 +89,14 @@ export const editUsers =
   ) =>
   async (dispatch: Dispatch) => {
     try {
-      const { data } = await axios.put(
-        `<url from heroku back-end deployment>/${userId}`,
-        {
-          firstName,
-          lastName,
-          email,
-          password,
-          isAdmin,
-        }
-      );
-      dispatch(userEditSucces(data));
+      const { data } = await axios.put(`/users/${userId}`, {
+        firstName,
+        lastName,
+        email,
+        password,
+        isAdmin,
+      });
+      dispatch(userEditSuccess(data));
     } catch (error) {
       dispatch(userEditError(error));
     }
@@ -110,14 +105,11 @@ export const editUsers =
 export const signin =
   (email: string, password: string) => async (dispatch: Dispatch) => {
     try {
-      const { data } = await axios.post(
-        "<url from heroku back-end deployment>/users",
-        { email, password }
-      );
-      dispatch(siginSucces(data));
+      const { data } = await axios.post("/users/signin", { email, password });
+      dispatch(signinSuccess(data));
       localStorage.setItem("userInfo", JSON.stringify(data));
     } catch (error) {
-      dispatch(siginError(error));
+      dispatch(signinError(error));
     }
   };
 
@@ -125,17 +117,14 @@ export const register =
   (firstName: string, lastName: string, email: string, password: string) =>
   async (dispatch: Dispatch) => {
     try {
-      const { data } = await axios.post(
-        "<url from heroku back-end deployment>/users",
-        {
-          firstName,
-          lastName,
-          email,
-          password,
-        }
-      );
-      dispatch(UserRegisterSucces(data));
-      dispatch(siginSucces(data));
+      const { data } = await axios.post("/users", {
+        firstName,
+        lastName,
+        email,
+        password,
+      });
+      dispatch(UserRegisterSuccess(data));
+      dispatch(signinSuccess(data));
       localStorage.setItem("userInfo", JSON.stringify(data));
     } catch (error) {
       dispatch(UserRegisterError(error));

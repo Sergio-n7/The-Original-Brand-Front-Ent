@@ -11,6 +11,7 @@ import DashboardHome from "../components/dashboard/DashboardHome";
 import DashboardUser from "../components/dashboard/DashboardUser";
 import DashboardGarmet from "../components/dashboard/DashboardGarmet";
 import GarmetEdit from "../components/dashboard/GarmetEdit";
+import Container1 from "../components/container1/pictureHome";
 
 const routes = () => {
   return (
@@ -18,6 +19,7 @@ const routes = () => {
       <ThemeProvider theme={theme}>
         <NavBar />
         <Switch>
+          <Route exact path="/" component={Container1} />
           <Route exact path="/" component={GarmetHome} />
           <Route path="/garmets/:garmetId" component={GarmetDetails} />
           <Route exact path="/signin" component={Signin} />
